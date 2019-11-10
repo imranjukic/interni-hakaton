@@ -3,7 +3,8 @@
 
 
 body {
-	background-color: 	rgb(47, 41, 41);
+	background-color: 	#FF8C00;
+  /*  background-image:url(img/back.gif);*/
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -27,10 +28,10 @@ display: block;
 }
 .cao{
     visibility: hidden;
-    color: rgb(65, 61, 58);
+    color: rgb(221, 119, 23);
 }
 /* Appearance */
-/*.links {
+.links {
 	background-color: rgb(49, 47, 45);
 	background-image: linear-gradient(to bottom, #0003, transparent);
 	border-bottom: 1px solid #0003;
@@ -53,26 +54,20 @@ display: block;
 	background: #68a;
 	height: 1px;
 	pointer-events: none;
-}*/
+}
 
 /* The Magic */
 #header {
-    background-image:url(img/giphy.gif);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    margin-left: 0;
-    margin-right: 0;
 	position: relative;
 	top: 0;
 	left: 0;
 	right: 0;
 }
-/*.links {
+.links {
 	display: grid;
 	grid-template-columns: repeat(var(--items), 1fr);
 	position: relative;
-}*/
+}
 .footer {
     position: fixed;
     left: 0;
@@ -97,6 +92,11 @@ display: block;
     font-weight: 300;
     cursor: pointer;
     transition: all .1s ease-in-out;
+    &:hover {
+      background-color: transparent;
+      border-color: #fff;
+      transition: all .1s ease-in-out;
+    }
     
   }
   
@@ -124,6 +124,21 @@ display: block;
     align-items: center;
     transform: translate3d(-4px,50px,0);
     opacity: 0;
+    span:nth-child(1) {
+      display: block;
+      width: 10px;
+      height: 2px;
+      background-color: #fff;
+      transform: rotate(45deg);
+    }
+    span:nth-child(2) {
+      display: block;
+      width: 20px;
+      height: 2px;
+      background-color: #fff;
+      transform: rotate(-45deg) translate3d(14px, -4px, 0);
+      transform-origin: 100%;
+    }
   }
   
   .loader.active {
