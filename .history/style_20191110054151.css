@@ -3,11 +3,11 @@
 
 
 body {
-	background-image:url(img/giphy.gif);
+	background-color: 	rgb(47, 41, 41);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
     background-position: center;
+    background-size: cover;
 	color: #eee;
 	font-family: 'Lato', sans-serif;
 	font-size: 62.5%;
@@ -24,18 +24,15 @@ display: block;
   margin-left: auto;
   margin-right: auto;
   width: 20%;
-  height: 70%;
 }
 .cao{
     visibility: hidden;
     color: rgb(65, 61, 58);
 }
 .containermt-5{
-        margin-top: 1.5%;
         text-align: center;
         justify-content: center;
         font-size: 100%;
-        color: orange;
 }
 /* Appearance */
 /*.links {
@@ -65,7 +62,10 @@ display: block;
 
 /* The Magic */
 #header {
-    
+    background-image:url(img/giphy.gif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     margin-left: 0;
     margin-right: 0;
 	position: relative;
@@ -83,7 +83,7 @@ display: block;
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 5%;
+    background-color: red;
     color: white;
     text-align: center;
   }
@@ -92,7 +92,7 @@ display: block;
     position: relative;
     justify-content: center;
     align-items: center;
-    width: 150px;
+    width: 200px;
     height: 36px;
     border-radius: 18px;
     background-color: orange;
@@ -114,7 +114,7 @@ display: block;
     height: 50px;
     background: transparent; 
     margin: 30px auto 0 auto;
-    border: solid 2px orange;
+    border: solid 2px #424242;
     border-top: solid 2px #1c89ff;
     border-radius: 50%;
     opacity: 0;
